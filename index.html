@@ -513,19 +513,8 @@
     <div class="right floated five wide column">
         <h4 class="ui top attached block header"><i class="ui quote left icon"></i>一言（ヒトコト）</h4>
         <div class="ui bottom attached center aligned segment">
-          <div class="ui active centered inline loader" id="hitokoto-loader"></div>
-          <script>
-          $.get('https://v1.hitokoto.cn/?c=a', function (data) {
-            if (typeof data === 'string') data = JSON.parse(data);
-            $('#hitokoto-loader').removeClass('active');
-            $('#hitokoto-content').css('display', '').text(data.hitokoto);
-            if (data.from) {
-              $('#hitokoto-from').css('display', '').text('——' + data.from);
-            }
-          });
-          </script>
-          <div style="font-size: 1em; line-height: 1.5em; display: none; " id="hitokoto-content"></div>
-          <div style="text-align: right; margin-top: 15px; font-size: 0.9em; color: #666; display: none; " id="hitokoto-from"></div>
+          <div style="font-size: 1em; line-height: 1.5em; " id="hitokoto-content">没有一言。一言炸了不知道为啥，一直转圈。</div>
+          <div style="text-align: right; margin-top: 15px; font-size: 0.9em; color: #666; " id="hitokoto-from">DE_aemmprty</div>
         </div>
         
                  
