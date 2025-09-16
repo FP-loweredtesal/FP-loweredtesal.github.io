@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://kel.ac.cn/contest/1013/problem/4 -->
+<head><style>:root{--litepicker-container-months-color-bg: #fff;--litepicker-container-months-box-shadow-color: #ddd;--litepicker-footer-color-bg: #fafafa;--litepicker-footer-box-shadow-color: #ddd;--litepicker-tooltip-color-bg: #fff;--litepicker-month-header-color: #333;--litepicker-button-prev-month-color: #9e9e9e;--litepicker-button-next-month-color: #9e9e9e;--litepicker-button-prev-month-color-hover: #2196f3;--litepicker-button-next-month-color-hover: #2196f3;--litepicker-month-width: calc(var(--litepicker-day-width) * 7);--litepicker-month-weekday-color: #9e9e9e;--litepicker-month-week-number-color: #9e9e9e;--litepicker-day-width: 38px;--litepicker-day-color: #333;--litepicker-day-color-hover: #2196f3;--litepicker-is-today-color: #f44336;--litepicker-is-in-range-color: #bbdefb;--litepicker-is-locked-color: #9e9e9e;--litepicker-is-start-color: #fff;--litepicker-is-start-color-bg: #2196f3;--litepicker-is-end-color: #fff;--litepicker-is-end-color-bg: #2196f3;--litepicker-button-cancel-color: #fff;--litepicker-button-cancel-color-bg: #9e9e9e;--litepicker-button-apply-color: #fff;--litepicker-button-apply-color-bg: #2196f3;--litepicker-button-reset-color: #909090;--litepicker-button-reset-color-hover: #2196f3;--litepicker-highlighted-day-color: #333;--litepicker-highlighted-day-color-bg: #ffeb3b}.show-week-numbers{--litepicker-month-width: calc(var(--litepicker-day-width) * 8)}.litepicker{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:0.8em;display:none}.litepicker button{border:none;background:none}.litepicker .container__main{display:-webkit-box;display:-ms-flexbox;display:flex}.litepicker .container__months{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:var(--litepicker-container-months-color-bg);border-radius:5px;-webkit-box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);width:calc(var(--litepicker-month-width) + 10px);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months.columns-2{width:calc((var(--litepicker-month-width) * 2) + 20px)}.litepicker .container__months.columns-3{width:calc((var(--litepicker-month-width) * 3) + 30px)}.litepicker .container__months.columns-4{width:calc((var(--litepicker-month-width) * 4) + 40px)}.litepicker .container__months.split-view .month-item-header .button-previous-month,.litepicker .container__months.split-view .month-item-header .button-next-month{visibility:visible}.litepicker .container__months .month-item{padding:5px;width:var(--litepicker-month-width);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months .month-item-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-weight:500;padding:10px 5px;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--litepicker-month-header-color)}.litepicker .container__months .month-item-header div{-webkit-box-flex:1;-ms-flex:1;flex:1}.litepicker .container__months .month-item-header div>.month-item-name{margin-right:5px}.litepicker .container__months .month-item-header div>.month-item-year{padding:0}.litepicker .container__months .month-item-header .reset-button{color:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button>svg{fill:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button *{pointer-events:none}.litepicker .container__months .month-item-header .reset-button:hover{color:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .reset-button:hover>svg{fill:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .button-previous-month,.litepicker .container__months .month-item-header .button-next-month{visibility:hidden;text-decoration:none;padding:3px 5px;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__months .month-item-header .button-previous-month *,.litepicker .container__months .month-item-header .button-next-month *{pointer-events:none}.litepicker .container__months .month-item-header .button-previous-month{color:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-previous-month>img{fill:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month:hover{color:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-previous-month:hover>svg{fill:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month{color:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month>svg,.litepicker .container__months .month-item-header .button-next-month>img{fill:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month:hover{color:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month:hover>svg{fill:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-weekdays-row{display:-webkit-box;display:-ms-flexbox;display:flex;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;color:var(--litepicker-month-weekday-color)}.litepicker .container__months .month-item-weekdays-row>div{padding:5px 0;font-size:85%;-webkit-box-flex:1;-ms-flex:1;flex:1;width:var(--litepicker-day-width);text-align:center}.litepicker .container__months .month-item:first-child .button-previous-month{visibility:visible}.litepicker .container__months .month-item:last-child .button-next-month{visibility:visible}.litepicker .container__months .month-item.no-previous-month .button-previous-month{visibility:hidden}.litepicker .container__months .month-item.no-next-month .button-next-month{visibility:hidden}.litepicker .container__days{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:center;-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__days>div,.litepicker .container__days>a{padding:5px 0;width:var(--litepicker-day-width)}.litepicker .container__days .day-item{color:var(--litepicker-day-color);text-align:center;text-decoration:none;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__days .day-item:hover{color:var(--litepicker-day-color-hover);-webkit-box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover);box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover)}.litepicker .container__days .day-item.is-today{color:var(--litepicker-is-today-color)}.litepicker .container__days .day-item.is-locked{color:var(--litepicker-is-locked-color)}.litepicker .container__days .day-item.is-locked:hover{color:var(--litepicker-is-locked-color);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-in-range{background-color:var(--litepicker-is-in-range-color);border-radius:0}.litepicker .container__days .day-item.is-start-date{color:var(--litepicker-is-start-color);background-color:var(--litepicker-is-start-color-bg);border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-flipped{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date{color:var(--litepicker-is-end-color);background-color:var(--litepicker-is-end-color-bg);border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date.is-flipped{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-end-date{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-highlighted{color:var(--litepicker-highlighted-day-color);background-color:var(--litepicker-highlighted-day-color-bg)}.litepicker .container__days .week-number{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--litepicker-month-week-number-color);font-size:85%}.litepicker .container__footer{text-align:right;padding:10px 5px;margin:0 5px;background-color:var(--litepicker-footer-color-bg);-webkit-box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.litepicker .container__footer .preview-date-range{margin-right:10px;font-size:90%}.litepicker .container__footer .button-cancel{background-color:var(--litepicker-button-cancel-color-bg);color:var(--litepicker-button-cancel-color);border:0;padding:3px 7px 4px;border-radius:3px}.litepicker .container__footer .button-cancel *{pointer-events:none}.litepicker .container__footer .button-apply{background-color:var(--litepicker-button-apply-color-bg);color:var(--litepicker-button-apply-color);border:0;padding:3px 7px 4px;border-radius:3px;margin-left:10px;margin-right:10px}.litepicker .container__footer .button-apply:disabled{opacity:0.7}.litepicker .container__footer .button-apply *{pointer-events:none}.litepicker .container__tooltip{position:absolute;margin-top:-4px;padding:4px 8px;border-radius:4px;background-color:var(--litepicker-tooltip-color-bg);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);white-space:nowrap;font-size:11px;pointer-events:none;visibility:hidden}.litepicker .container__tooltip:before{position:absolute;bottom:-5px;left:calc(50% - 5px);border-top:5px solid rgba(0,0,0,0.12);border-right:5px solid transparent;border-left:5px solid transparent;content:""}.litepicker .container__tooltip:after{position:absolute;bottom:-4px;left:calc(50% - 4px);border-top:4px solid var(--litepicker-tooltip-color-bg);border-right:4px solid transparent;border-left:4px solid transparent;content:""}
+</style>
+    <!-- imports -->
+   <!-- require APlayer -->
+   <!--
+    <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+    <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+  -->
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>首页 - SZOJ测评和学习资料</title>
+    <link href="./cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="/self/tomorrow.css" rel="stylesheet">
+    <link href="/self/math.css" rel="stylesheet">
+    <link href="/self/style.css?20181212" rel="stylesheet">
+    <link href="/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+
+      <link href="/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="/google-fonts/lato.css" rel="stylesheet">
+      <link href="/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="/google-fonts/exo-2.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-T843MNSVX5&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script data-cfasync="false" src="/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-135644008-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <style type="text/css">
+    .shenzhong_header { position: relative; z-index: 6; width: 100%; height: 100px; background: #146e3c; top:0;}
+    .shenzhong_header .menu-handle { display: none; }
+    .shenzhong_header .logo { width: 100%; padding-top: 18px; text-align: center; }
+    .shenzhong_header .logo a { display: inline-block; vertical-align: top; *display: inline; *zoom: 1; }
+    .shenzhong_header .logo a img { display: block; width: 282px; height: 64px; }
+    .shenzhong_header .web { position: relative; }
+    .recent-actions{margin:1em;font-size:.9em}
+    .rated-user{font-family:helvetica neue,Helvetica,Arial,sans-serif;text-decoration:none!important;font-weight:700;display:inline-block}
+    .user-black{color:#000!important;font-weight:400!important}
+    .user-legendary{color:red!important}
+    .user-legendary::first-letter{color:#000!important}
+    .legendary-user-first-letter{color:#000!important}
+    .user-red{color:red!important}
+    .user-fire{color:red!important}
+    .user-yellow{color:#bb0!important}
+    .user-violet{color:#a0a!important}
+    .user-orange{color:#ff8c00!important}
+    .user-blue{color:blue!important}
+    .user-cyan{color:#03a89e!important}
+    .user-green{color:green!important}
+    .user-gray{color:gray!important}
+    .user-admin{color:#000!important}
+    </style>
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="shenzhong_header">
+       <div class="sub header">
+           <h1 class="logo">
+                <img src="https://i.loli.net/2019/07/04/5d1d5ef7b616061504.png">
+           </h1>
+       </div>
+    </div>
+    <div class="ui fixed borderless menu" style="position: fixed;height: 49px;">
+    <div class="ui container">	
+            
+            <a class="header item" href="http://kel.ac.cn/"><img src="./2025-9-11 NOIP初三讲课 - 比赛 - SZOJ测评和学习资料_files/5c93a39c30332.jpg" style="width: 45px; height: 45px; "></a>
+            
+            <a class="item" href="http://kel.ac.cn/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="http://kel.ac.cn/problems"><i class="list icon"></i>总结与归纳</a>
+            <a class="item active" href="http://kel.ac.cn/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="http://kel.ac.cn/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="http://kel.ac.cn/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item" href="http://kel.ac.cn/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="http://kel.ac.cn/help"><i class="help circle icon"></i> 帮助</a>
+            
+              <a id="back_to_contest" class="item" href="http://kel.ac.cn/contest/1013"><i class="arrow left icon"></i> 返回比赛</a>
+            
+            <div class="right menu">
+              
+              <a href="http://kel.ac.cn/user/124" style="color: inherit; ">
+              </a><div class="ui simple dropdown item"><a href="http://kel.ac.cn/user/124" style="color: inherit; ">
+                </a><a class="rated-user user-violet">
+                    
+					           ☀️
+					
+				shx2023</a>
+				 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="http://kel.ac.cn/user/124/edit"><i class="edit icon"></i>修改资料</a>
+                  
+                  <a class="item" href-post="/logout?url=%2Fcontest%2F1013"><i class="power icon"></i>注销</a>
+                </div>
+              </div>
+              
+                
+            </div>
+        </div>
+    </div>
+   <div style="margin-top:28px; "> 
+   <div class="ui main container">
+
+<div class="padding">
+  <h1>2025-9-11 NOIP初三讲课</h1>
+  <div style="margin-bottom: 30px;"></div>
+  
+  
+  
+  
+  
+  <div class="ui pointing below left label">2025-09-16 14:00:00</div>
+  <div class="ui pointing below right label">2025-09-17 23:59:59</div>
+  
+  <div id="timer-progress" class="ui tiny indicating progress active" data-percent="9">
+    <div class="bar" style="width: 9%; transition-duration: 300ms;"></div>
+  </div>
+  <div class="ui grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui buttons">
+          
+            <a class="ui small blue button" href="http://kel.ac.cn/contest/1013/ranklist">排行榜</a>
+          
+          
+          <a class="ui small positive button" href="http://kel.ac.cn/contest/1013/submissions">提交记录</a>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+         <table class="ui selectable celled table">
+            <thead>
+              <tr>
+                <th class="one wide" style="text-align: center">状态</th>
+                <th>题目</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="http://kel.ac.cn/contest/1013/problem/1">题解</a></td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                  <a href="http://kel.ac.cn/contest/submission/152669">
+                  
+                    
+                      <span class="score score_10">
+                        
+                          +5
+                        
+                      </span>
+                    
+                  
+                
+                </a></td>
+                <td><a href="http://kel.ac.cn/contest/1013/problem/2">环</a></td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                  <a href="http://kel.ac.cn/contest/submission/152735">
+                  
+                    
+                      <span class="score score_10">
+                        
+                          +4
+                        
+                      </span>
+                    
+                  
+                
+                </a></td>
+                <td><a href="http://kel.ac.cn/contest/1013/problem/3">序列拆分</a></td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="http://kel.ac.cn/contest/1013/problem/4">路径</a></td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="http://kel.ac.cn/contest/1013/problem/5">Dave的旅行</a></td>
+                
+              </tr>
+            
+            </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+$(function () {
+  setInterval(function () {
+    $('#timer-progress').progress({
+      value: Date.now() / 1000 - 1758002400,
+      total: 122399
+    });
+  }, 5000);
+});
+</script>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+	  <a href="https://beian.miit.gov.cn/">粤ICP备20058934号-1</a>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="./2025-9-11 NOIP初三讲课 - 比赛 - SZOJ测评和学习资料_files/semantic.min.js.下载"></script>
+<script src="./2025-9-11 NOIP初三讲课 - 比赛 - SZOJ测评和学习资料_files/chart.js.下载"></script>
+<!-- script src="/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script -->
+<script src="./2025-9-11 NOIP初三讲课 - 比赛 - SZOJ测评和学习资料_files/script.js.下载"></script>
+
+
+
+</body></html>

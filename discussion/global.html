@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://kel.ac.cn/discussion/global -->
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- imports -->
+   <!-- require APlayer -->
+   <!--
+    <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+    <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+	-->
+    
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>讨论 - SZOJ测评和学习资料</title>
+    <link href="./讨论 - SZOJ测评和学习资料_files/semantic.min.css" rel="stylesheet">
+    <link href="./讨论 - SZOJ测评和学习资料_files/tomorrow.css" rel="stylesheet">
+    <link href="./讨论 - SZOJ测评和学习资料_files/math.css" rel="stylesheet">
+    <link href="./讨论 - SZOJ测评和学习资料_files/style.css" rel="stylesheet">
+    <link href="./讨论 - SZOJ测评和学习资料_files/morris.css" rel="stylesheet">
+    
+      <link href="./讨论 - SZOJ测评和学习资料_files/fira-mono.css" rel="stylesheet">
+      <link href="./讨论 - SZOJ测评和学习资料_files/lato.css" rel="stylesheet">
+      <link href="./讨论 - SZOJ测评和学习资料_files/open-sans.css" rel="stylesheet">
+      <link href="./讨论 - SZOJ测评和学习资料_files/exo-2.css" rel="stylesheet">
+    
+    <script type="text/javascript" async="" src="./讨论 - SZOJ测评和学习资料_files/js"></script><script async="" src="./讨论 - SZOJ测评和学习资料_files/analytics.js.下载"></script><script data-cfasync="false" src="./讨论 - SZOJ测评和学习资料_files/jquery.min.js.下载"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-135644008-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    <style type="text/css">
+    .shenzhong_header { position: relative; z-index: 6; width: 100%; height: 100px; background: #146e3c; top:0;}
+    .shenzhong_header .menu-handle { display: none; }
+    .shenzhong_header .logo { width: 100%; padding-top: 18px; text-align: center; }
+    .shenzhong_header .logo a { display: inline-block; vertical-align: top; *display: inline; *zoom: 1; }
+    .shenzhong_header .logo a img { display: block; width: 282px; height: 64px; }
+    .shenzhong_header .web { position: relative; }
+    .recent-actions{margin:1em;font-size:.9em}
+    .rated-user{font-family:helvetica neue,Helvetica,Arial,sans-serif;text-decoration:none!important;font-weight:700;display:inline-block}
+    .user-black{color:#000!important;font-weight:400!important}
+    .user-legendary{color:red!important}
+    .user-legendary::first-letter{color:#000!important}
+    .legendary-user-first-letter{color:#000!important}
+    .user-red{color:red!important}
+    .user-fire{color:red!important}
+    .user-yellow{color:#bb0!important}
+    .user-violet{color:#a0a!important}
+    .user-orange{color:#ff8c00!important}
+    .user-blue{color:blue!important}
+    .user-cyan{color:#03a89e!important}
+    .user-green{color:green!important}
+    .user-gray{color:gray!important}
+    .user-admin{color:#000!important}
+    </style>
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="shenzhong_header">
+       <div class="sub header">
+           <h1 class="logo">
+                <img src="./讨论 - SZOJ测评和学习资料_files/5d1d5ef7b616061504.png">
+           </h1>
+       </div>
+    </div>
+    <div class="ui fixed borderless menu" style="position: fixed;height: 49px;">
+    <div class="ui container">	
+            
+            <a class="header item" href="http://kel.ac.cn/"><img src="./讨论 - SZOJ测评和学习资料_files/5c93a39c30332.jpg" style="width: 45px; height: 45px; "></a>
+            
+            <a class="item" href="http://kel.ac.cn/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="http://kel.ac.cn/problems"><i class="list icon"></i>总结与归纳</a>
+            <a class="item" href="http://kel.ac.cn/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="http://kel.ac.cn/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="http://kel.ac.cn/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item active" href="http://kel.ac.cn/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="http://kel.ac.cn/help"><i class="help circle icon"></i> 帮助</a>
+            
+            <div class="right menu">
+              
+              <a href="http://kel.ac.cn/user/124" style="color: inherit; ">
+              </a><div class="ui simple dropdown item"><a href="http://kel.ac.cn/user/124" style="color: inherit; ">
+                </a><a class="rated-user user-violet">
+                    
+					           ☀️
+					
+				shx2023</a>
+				 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="http://kel.ac.cn/user/124/edit"><i class="edit icon"></i>修改资料</a>
+                  
+                  <a class="item" href-post="/logout?url=%2Fdiscussion%2Fglobal"><i class="power icon"></i>注销</a>
+                </div>
+              </div>
+              
+                
+            </div>
+        </div>
+    </div>
+   <div style="margin-top:28px; "> 
+   <div class="ui main container">
+
+<div class="padding">
+  <div class="ui grid">
+    <div class="row">
+      <div class="ten wide column">
+        <div class="ui breadcrumb">
+          <div class="section">讨论</div>
+          <i class="right angle icon divider"></i>
+          
+            <div class="section">全局板块</div>
+          
+        </div>
+      </div>
+      <div class="six wide right aligned column" style="margin-bottom: 10px; ">
+        
+          
+            <a style="margin-left: 10px; " href="http://kel.ac.cn/discussion/problems" class="ui labeled icon mini blue button">
+              <i class="file outline icon"></i>
+              题目板块
+            </a>
+          
+          
+          <a style="margin-left: 10px; " href="http://kel.ac.cn/article/0/edit" class="ui labeled icon mini button">
+              <i class="write icon"></i>
+              发帖
+          </a>
+          
+        
+      </div>
+    </div>
+  </div>
+  
+  <table class="ui very basic center aligned table">
+    <thead>
+      <tr>
+        <th class="left aligned" style="width: 45%; ">标题</th>
+        
+        <th style="width: 10%; ">作者</th>
+        <th style="width: 10%; ">回复数</th>
+        <th style="width: 15%; ">最新回复</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2691">你说空瓶适合许愿 另解 </a></td>
+            
+            <td><a href="http://kel.ac.cn/user/72">lzy</a></td>
+            <td>3</td>
+            <td>2025-08-29 11:05:19</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2751">[QOJ4533] 灯泡测试 题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/144">hsk</a></td>
+            <td>0</td>
+            <td>2025-08-29 10:55:54</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2680">111</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/99">lmy</a></td>
+            <td>1</td>
+            <td>2025-06-13 11:29:31</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2690">random 代码保存（三份都拍不上）</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/72">lzy</a></td>
+            <td>0</td>
+            <td>2025-06-13 9:59:17</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2654">数据</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>0</td>
+            <td>2025-05-13 9:08:18</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2644">高一每周任务</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>0</td>
+            <td>2025-03-10 23:55:15</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2640">client.py</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>0</td>
+            <td>2025-02-25 16:13:22</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2561">论打暴力论平板电视论打表 （+ 10 篇题解）更新版</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>14</td>
+            <td>2025-02-20 14:48:19</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2637">hack myself XD</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2025-02-19 14:17:46</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2636">存档</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>0</td>
+            <td>2025-02-19 10:37:39</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2634">#9211 凸性优化/反悔贪心另解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/91">zhy</a></td>
+            <td>0</td>
+            <td>2025-02-17 19:21:39</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2628">czk_code_saving</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/100">pfy</a></td>
+            <td>1</td>
+            <td>2025-02-15 10:23:43</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2627">2025.2.4 模拟赛 T3 xor sol.</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/149">lty</a></td>
+            <td>0</td>
+            <td>2025-02-04 16:43:05</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2626">存档</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>0</td>
+            <td>2025-02-03 12:22:43</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2625">Karen loves Sqrt Tech 1 题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/108">wjc2023</a></td>
+            <td>1</td>
+            <td>2025-01-23 10:44:46</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2621">产奶模式 hack</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/130">xfd2023</a></td>
+            <td>1</td>
+            <td>2025-01-19 14:50:34</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2620">hack xrf T1</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/139">yzx2023</a></td>
+            <td>1</td>
+            <td>2025-01-18 10:09:48</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2619">记录</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2025-01-17 17:30:05</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2618">db</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/99">lmy</a></td>
+            <td>0</td>
+            <td>2025-01-04 15:40:06</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2614">#9536. Eclipse 模拟退火题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/145">th</a></td>
+            <td>1</td>
+            <td>2024-12-27 11:35:53</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2600">#130003. 每周集训题解汇总(Div.1)  题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>7</td>
+            <td>2024-12-07 12:29:32</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2591">存档</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>2</td>
+            <td>2024-11-23 17:16:08</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2593">题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>1</td>
+            <td>2024-11-22 15:20:21</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2590">111</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/130">xfd2023</a></td>
+            <td>0</td>
+            <td>2024-11-21 8:37:12</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2589">1000</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>1</td>
+            <td>2024-11-20 17:05:30</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2588">111</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/147">gsn</a></td>
+            <td>0</td>
+            <td>2024-11-20 15:34:31</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2587">testdata</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>0</td>
+            <td>2024-11-20 14:13:31</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2586">五谷丰登记录</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>2</td>
+            <td>2024-11-19 15:41:39</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2584">代码公示，求喷</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>6</td>
+            <td>2024-11-19 15:20:39</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2580">bad code</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2024-11-14 16:32:19</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2576">Dummy</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2024-11-14 15:12:11</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2569">题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/146">dxh</a></td>
+            <td>0</td>
+            <td>2024-11-11 16:11:01</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2555">存档</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>5</td>
+            <td>2024-10-23 17:03:41</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2552">魔术の胡乱思路</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/116">ljx2023</a></td>
+            <td>2</td>
+            <td>2024-10-21 8:25:23</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2550">#12111 一个单log做法</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/91">zhy</a></td>
+            <td>0</td>
+            <td>2024-10-19 15:13:49</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2544">?</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/116">ljx2023</a></td>
+            <td>0</td>
+            <td>2024-10-19 14:50:56</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2461">.</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/130">xfd2023</a></td>
+            <td>14</td>
+            <td>2024-10-19 14:40:11</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2542">hyT2</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>1</td>
+            <td>2024-10-19 14:19:24</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2537">求和</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2024-10-18 9:15:27</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2536">求和</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2024-10-18 9:15:05</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2419">可怜 OJ Bug Report - 2024/08/30 - zjx2023</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>4</td>
+            <td>2024-10-15 16:43:53</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2518">抛物线问题题解</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/116">ljx2023</a></td>
+            <td>0</td>
+            <td>2024-10-12 17:40:22</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2514">H</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/113">hy2023</a></td>
+            <td>0</td>
+            <td>2024-10-02 16:33:42</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2513">小本本</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/1">system</a></td>
+            <td>0</td>
+            <td>2024-10-02 16:14:06</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2478">存档</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/135">zjx2023</a></td>
+            <td>0</td>
+            <td>2024-09-15 16:30:30</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2473">米特运输简化版题意(搬运你谷)</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/113">hy2023</a></td>
+            <td>1</td>
+            <td>2024-09-15 8:39:04</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2460">B</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/113">hy2023</a></td>
+            <td>0</td>
+            <td>2024-09-07 16:10:59</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2457">疼！</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/116">ljx2023</a></td>
+            <td>0</td>
+            <td>2024-09-07 12:33:55</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2443">S</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/126">wcz2023</a></td>
+            <td>0</td>
+            <td>2024-08-31 15:15:27</td>
+        </tr>
+    
+        <tr>
+            <td class="left aligned"><a href="http://kel.ac.cn/article/2325">你说的对</a></td>
+            
+            <td><a href="http://kel.ac.cn/user/139">yzx2023</a></td>
+            <td>3</td>
+            <td>2024-08-31 11:45:17</td>
+        </tr>
+    
+    </tbody>
+  </table>
+  <br>
+  
+<div style="text-align: center; ">
+  <div class="ui pagination menu" style="box-shadow: none; ">
+    <a class=" disabled icon item" id="page_prev">
+      <i class="left chevron icon"></i>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    <a class="active item" href="http://kel.ac.cn/discussion/global?page=1">1</a>
+
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=2">2</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=3">3</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=4">4</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=5">5</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=6">6</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=7">7</a>
+    
+      <a class="item" href="http://kel.ac.cn/discussion/global?page=8">8</a>
+    
+
+    
+
+    
+    <a class="item" href="http://kel.ac.cn/discussion/global?page=9">9</a>
+    
+
+    <a class=" icon item" href="http://kel.ac.cn/discussion/global?page=2" id="page_next">
+      <i class="right chevron icon"></i>
+    </a>
+  </div>
+</div>
+
+
+  
+</div>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+	  <a href="https://beian.miit.gov.cn/">粤ICP备20058934号-1</a>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="./讨论 - SZOJ测评和学习资料_files/semantic.min.js.下载"></script>
+<script src="./讨论 - SZOJ测评和学习资料_files/chart.js.下载"></script>
+<!-- script src="/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script -->
+<script src="./讨论 - SZOJ测评和学习资料_files/script.js.下载"></script>
+
+
+
+</body></html>
